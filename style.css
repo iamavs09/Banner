@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#offer-banner {
+   /* height: 40px; */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 15px;
+   height: 100%;
+   background-color: rgb(255, 168, 7);
+   border-radius: 30px;
+  }
+
+  
+  
+  
+  
+  @media screen and (max-width: 600px) {
+    #offer-banner {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        height: 100%;
+        background-color: rgb(255, 223, 164);
+        border-radius: 10px;
+        border: 2px solid orange;
+        gap: 10px;
+        width: 100%;
+        max-width: 360px;
+        margin-inline:auto;
+       }
+       .logo-container{
+        position: relative;
+       }
+       .logo-container::after{
+        content: " ";
+        width: 100%;
+        position: absolute;
+        height: 1px;
+        background-color: black;
+        bottom: -5px;
+        left: 0;
+
+       }
+       .offer-text{
+        background-color: rgb(245, 194, 101);
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+       }
+  }
+  
